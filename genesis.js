@@ -4,7 +4,7 @@ let capituloAtual = 1;
 // textos por capítulo e versículo
 const textos = {
   1: { // capítulo 1
-    1: "1 No princípio criou Deus o céu e a terra.\nEste versículo declara que Deus é a origem de tudo o que existe, afirmando Sua eternidade, soberania e o ato intencional da criação de toda a realidade, tanto espiritual quanto material.",
+    1: "1 No princípio criou Deus o céu e a terra.",
     2: "2 E a terra era sem forma e vazia; e havia trevas sobre a face do abismo; e o Espírito de Deus se movia sobre a face das águas.",
     3: "3 E disse Deus: Haja luz; e houve luz.",
     4: "4 E viu Deus que era boa a luz; e fez Deus separação entre a luz e as trevas.",

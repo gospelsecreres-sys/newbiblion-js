@@ -1,8 +1,11 @@
 let listaVersiculos = [];
 let capituloAtual = 1;
+let livroAtual = "genesis"; // livro padrão
 
-// textos por capítulo e versículo
-const textos = {
+// textos por livro, capítulo e versículo
+const biblia = {
+  genesis: {
+
   1: { // capítulo 1
     1: "1 No princípio criou Deus o céu e a terra.",
     2: "2 E a terra era sem forma e vazia; e havia trevas sobre a face do abismo; e o Espírito de Deus se movia sobre a face das águas.",
@@ -609,36 +612,72 @@ const textos = {
     17: "17 E orou Abraão a Deus, e sarou Deus a Abimeleque, e à sua mulher, e às suas servas, de maneira que tiveram filhos;",
     18: "18 Porque o Senhor havia fechado totalmente todas as madres da casa de Abimeleque, por causa de Sara, mulher de Abraão."
 
-   
+  }
+  },
+
+  
+exodo: {
+    1: {
+      1: "1 Estes são os nomes dos filhos de Israel...",
+      2: "2 Rúben, Simeão, Levi e Judá..."
+    },
+    2: {
+      1: "1 E foi um homem da casa de Levi...",
+      2: "2 E a mulher concebeu..."
+    }
   },
 
 
 
+  levitico: {
+    1: {
+      1: "1 Estes são os nomes dos filhos de Israel...",
+      2: "2 Rúben, Simeão, Levi e Judá..."
+    },
+    2: {
+      1: "1 E foi um homem da casa de Levi...",
+      2: "2 E a mulher concebeu..."
+    }
+  },
+
 
   
   
 };
 
-// inicia com o capítulo 1
+// inicia com o capítulo 1 do livro padrão
 window.onload = () => {
-  gerarBotoesDoCapitulo(1);
+  gerarBotoesDoCapitulo(capituloAtual);
 };
 
-function trocarCapitulo(capitulo) {
-  capituloAtual = Number(capitulo);
-
-  // limpa seleção anterior
+// Função para trocar de livro
+function trocarLivro(livro) {
+  livroAtual = livro;
+  capituloAtual = 1;
   listaVersiculos = [];
   document.getElementById("versiculos").innerHTML = "";
+  gerarBotoesDoCapitulo(capituloAtual);
+  // Atualiza o select de capítulos se houver
+  const select = document.getElementById("capitulos");
+  if (select) {
+    select.value = capituloAtual;
+  }
+}
 
+// Função para trocar capítulo
+function trocarCapitulo(capitulo) {
+  capituloAtual = Number(capitulo);
+  listaVersiculos = [];
+  document.getElementById("versiculos").innerHTML = "";
   gerarBotoesDoCapitulo(capituloAtual);
 }
 
+// Função para gerar botões de versículos
 function gerarBotoesDoCapitulo(capitulo) {
   const area = document.getElementById("botoes");
   area.innerHTML = "";
 
-  const totalVersiculos = Object.keys(textos[capitulo]).length;
+  const totalVersiculos = Object.keys(biblia[livroAtual][capitulo]).length;
 
   for (let i = 1; i <= totalVersiculos; i++) {
     const btn = document.createElement("button");
@@ -654,6 +693,7 @@ function gerarBotoesDoCapitulo(capitulo) {
   }
 }
 
+// Seleciona ou deseleciona versículo
 function toggleVersiculo(numero, botao) {
   const index = listaVersiculos.findIndex(v => v.numero === numero);
 
@@ -665,7 +705,7 @@ function toggleVersiculo(numero, botao) {
     // adiciona
     listaVersiculos.push({
       numero: numero,
-      texto: textos[capituloAtual][numero]
+      texto: biblia[livroAtual][capituloAtual][numero]
     });
     botao.classList.add("ativo");
   }
@@ -674,6 +714,7 @@ function toggleVersiculo(numero, botao) {
   renderizar();
 }
 
+// Renderiza os versículos selecionados
 function renderizar() {
   const container = document.getElementById("versiculos");
   container.innerHTML = "";

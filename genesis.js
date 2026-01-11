@@ -647,7 +647,7 @@ exodo: {
 
 // inicia com o capítulo 1 do livro padrão
 window.onload = () => {
-  gerarBotoesDoCapitulo(capituloAtual);
+  
 };
 
 // Função para trocar de livro

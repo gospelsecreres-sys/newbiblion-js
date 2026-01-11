@@ -621,7 +621,7 @@ const textos = {
 
 // inicia com o capítulo 1
 window.onload = () => {
-  
+  gerarBotoesDoCapitulo(1);
 };
 
 function trocarCapitulo(capitulo) {

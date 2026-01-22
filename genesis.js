@@ -1818,7 +1818,7 @@ exodo: {
 24: "24 E ouviu Deus o seu gemido, e lembrou-se Deus da sua aliança com Abraão, com Isaque, e com Jacó;",
 25: "25 E viu Deus os filhos de Israel, e atentou Deus para a sua condição."
 
-    }
+    },
     3: {
 1: "1 E apascentava Moisés o rebanho de Jetro, seu sogro, sacerdote em Midiã; e levou o rebanho atrás do deserto, e chegou ao monte de Deus, a Horebe.",
 2: "2 E apareceu-lhe o anjo do Senhor em uma chama de fogo do meio duma sarça; e olhou, e eis que a sarça ardia no fogo, e a sarça não se consumia.",

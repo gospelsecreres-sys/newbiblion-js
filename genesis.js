@@ -7,7 +7,7 @@ const biblia = {
   genesis: {
 
   1: { // capítulo 1
-    1: "1 No princípio criou Deus o céu e a terra. <p>O versículo apresenta o início da criação, mostrando que antes de tudo existia apenas Deus, eterno e independente. O verbo “criou” (hebraico <em>bara</em>) indica que Ele trouxe toda a realidade à existência do nada, evidenciando Seu poder soberano. “Céu e terra” abrangem tudo o que existe, tanto o universo espiritual quanto o mundo material, afirmando que Deus é o Criador de toda a realidade. Ensina que tudo tem origem em Deus e nos convida a confiar em Sua autoridade e cuidado sobre a vida e o universo.</p>",
+    1: "1 No princípio criou Deus o céu e a terra.",
     
     2: "2 E a terra era sem forma e vazia; e havia trevas sobre a face do abismo; e o Espírito de Deus se movia sobre a face das águas.",
     3: "3 E disse Deus: Haja luz; e houve luz.",

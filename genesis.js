@@ -6692,6 +6692,41 @@ josue: {
     }
 
 },
+
+
+  juizes: {
+1: {
+      1: "1 E foi um homem da casa de Levi...",
+      2: "2 E a mulher concebeu..."
+    }
+
+},
+
+
+  rute: {
+1: {
+      1: "1 E foi um homem da casa de Levi...",
+      2: "2 E a mulher concebeu..."
+    }
+
+},
+
+  primeirasamuel: {
+1: {
+      1: "1 E foi um homem da casa de Levi...",
+      2: "2 E a mulher concebeu..."
+    }
+
+},
+
+
+  segundasamuel: {
+1: {
+      1: "1 E foi um homem da casa de Levi...",
+      2: "2 E a mulher concebeu..."
+    }
+
+},
   
   
 };

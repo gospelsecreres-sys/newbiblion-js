@@ -10882,11 +10882,27 @@ primeirareis: {
 
 segundareis: {
 1: {
+
+},
+
+},
+
+
+primeiracronicas: {
+1: {
       1: "1 E foi um homem da casa de Levi...",
       2: "2 E a mulher concebeu..."
     }
 
 },
+
+segundacronicas: {
+1: {
+      1: "1 E foi um homem da casa de Levi...",
+      2: "2 E a mulher concebeu..."
+    }
+
+},  
   
 
 
